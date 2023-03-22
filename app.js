@@ -82,7 +82,7 @@ function initApp() {
     alive: true,
     image: "http://hp-api.herokuapp.com/images/draco.jpg",
   };
-  console.log(harry);
+
   console.log(ron);
   console.log(hermione);
 
@@ -104,6 +104,18 @@ function showCharacter(character) {
             </article>
         `
   );
+
+  document.querySelector("#characters article:last-child").addEventListener("click", characterClicked);
+
+  function characterClicked() {
+    console.log(character);
+    document.querySelector("#character-name").textContent = character.name;
+    document.querySelector("#character-house").textContent = character.house;
+    document.querySelector("#character-birth").textContent = character.dateOfBirth;
+    document.querySelector("#character-actor").textContent = character.actor;
+    document.querySelector("#character-image").src = character.image;
+    document.querySelector("#dialog").showModal();
+  }
 }
 
 // function showCharacter(image, name, house, dateOfBirth, actor) {

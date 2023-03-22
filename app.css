@@ -197,7 +197,8 @@ input {
 dialog {
   border-color: var(--green);
   background-color: var(--light-green);
-  width: 65vw;
+  width: 40vw;
+  height: 40vw;
   padding: 2em 1em;
 }
 
