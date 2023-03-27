@@ -118,6 +118,23 @@ function showCharacter(character) {
   }
 }
 
+const theNames = ["Jeff", "Tommy", "Weezy"];
+
+const hasNeville = theNames.includes("Neville");
+const tommyIndex = theNames.indexOf("Tommy");
+const drengene = theNames.slice(0, 2);
+const lilleTommy = theNames.indexOf("tommy");
+
+console.log(hasNeville);
+console.log(tommyIndex);
+console.log(drengene);
+console.log(lilleTommy);
+
+// console.log(theNames);
+// console.log(theNames.length);
+// console.log(theNames.at(0));
+// console.log(theNames[1]);
+
 // function showCharacter(image, name, house, dateOfBirth, actor) {
 //     //define elements
 //     const articleElement = document.createElement("article");
